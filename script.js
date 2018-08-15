@@ -48,29 +48,29 @@ const userFoodChoice = {
 $(function(){
     // this is a array that we made so we can store the data from the values the user has given through the 
     //inputs 
-    let userMeal = [];
-
+    
     $('form').on('submit',function(event){
         event.preventDefault();
         // this is collecting the value from the input that the user has selected 
         // we have made it into a variable
-        const selectedFood = $('input[name=food]:checked').val();
+        let selectedFood = $('input[name=food]:checked').val();
         //console.log(selectedFood);
         
         // this is collecting the value from the input that the the user had selected
         // we have made it into a variable 
-        const selectedPrice = $('input[name=price]:checked').val();
-       // console.log(selectedPrice);
-            
+        let selectedPrice = $('input[name=price]:checked').val();
+        // console.log(selectedPrice);
+        
         // these methods are pushing the values that we have gotten from user and put into variables
-        // into our new array userMal, so that we are able to access them
+        // into our new array userMeal, so that we are able to access them
+        // define this array in the form submission the make the scope smaller 
+        let userMeal = [];
         userMeal.push(selectedFood);
         userMeal.push(selectedPrice);
-
-       // console.log(userMeal);
+        console.log(userMeal);
         
 
-        // this variable is to get the date from new array userMeal that is selected from userFoodChoices
+        // this variable is to get the data from new array userMeal that is selected from userFoodChoices
         const foodOptions = userFoodChoice[userMeal[0]];
        // console.log(foodOptions);
 
@@ -81,10 +81,11 @@ $(function(){
         
         // this variable so we are able to get the answer from the filterdChoics, which filters the values
         // from the user with the same value
-        const answer = filteredChoices[0].name;
+        let answer = filteredChoices[0].name;
         console.log(answer);
         
         $('.answer').text(answer);
+        userMeal.splice();
 
     });
     
