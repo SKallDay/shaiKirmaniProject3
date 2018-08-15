@@ -11,6 +11,30 @@ const userFoodChoice = {
         {
             name:'Saffron spice Kitchen',
             price:'$'
+        },
+        {
+            name:'Himalayan Kitchen',
+            price:'$$'
+        },
+        {
+            name:'Spicy Mafia',
+            price:'$'
+        },
+        {
+            name:'Pai',
+            price:'$$$'
+        },
+        {
+            name:'DaiKo Indian Kitchen & Nepali Street Food',
+            price:'$$'
+        },
+        {
+            name :'Thai Home',
+            price:'$'
+        },
+        {
+            name:'Lake Inez',
+            price:'$$$'
         }
     ],
     savory:[
@@ -24,6 +48,18 @@ const userFoodChoice = {
         },
         {
             name:'Greens Vegetarian',
+            price:'$'
+        },
+        {
+            name:'Parka Food Co',
+            price:'$$$'
+        },
+        {
+            name:'Grasshopper',
+            price:'$$'
+        },
+        {
+            name:'Apiecalypse Now!',
             price:'$'
         }
     ],
@@ -40,6 +76,18 @@ const userFoodChoice = {
             name:'Through Being Cool',
             price:'$'
 
+        },
+        {
+            name: 'Soma Chocolatemaker',
+            price:'$$$'
+        },
+        {
+            name:'Bakerbots Baking',
+            price:'$'
+        },
+        {
+            name:'Millie Creperie',
+            price:'$$'
         }
     ]
 };
@@ -77,11 +125,15 @@ $(function(){
        // this variable is equal to the function of filter that we are now filtering out data from inputs from
        // we will get the item that had the same values from the array as the user selected 
         const filteredChoices = foodOptions.filter(item => item.price === userMeal[1]);
-       // console.log(filteredChoices);
+       console.log(filteredChoices);
+
+        const random = Math.floor(Math.random() * filteredChoices.length);
+        console.log(random);
+        
         
         // this variable so we are able to get the answer from the filterdChoics, which filters the values
         // from the user with the same value
-        let answer = filteredChoices[0].name;
+        let answer = filteredChoices[random].name;
         console.log(answer);
         
         $('.answer').text(answer);
