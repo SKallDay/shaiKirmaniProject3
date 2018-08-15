@@ -61,6 +61,18 @@ const userFoodChoice = {
         {
             name:'Apiecalypse Now!',
             price:'$'
+        },
+        {
+            name:'Woodlot Restaurant',
+            price:'$$$'
+        },
+        {
+            name:'Veghed',
+            price:'$$'
+        },
+        {
+            name:'Urban Herbivore',
+            price:'$'
         }
     ],
     sweet:[
