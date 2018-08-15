@@ -46,14 +46,62 @@ const userFoodChoice = {
 
 // js scripts below 
 $(function(){
+    // this is a array that we made so we can store the data from the values the user has given through the 
+    //inputs 
+    let userMeal = [];
 
     $('form').on('submit',function(event){
         event.preventDefault();
-        const food = $('input[name=food]:checked').val();
-        const price = $('input[name=price]:checked').val();
+        // this is collecting the value from the input that the user has selected 
+        // we have made it into a variable
+        const selectedFood = $('input[name=food]:checked').val();
+        //console.log(selectedFood);
+        
+        // this is collecting the value from the input that the the user had selected
+        // we have made it into a variable 
+        const selectedPrice = $('input[name=price]:checked').val();
+       // console.log(selectedPrice);
+            
+        // these methods are pushing the values that we have gotten from user and put into variables
+        // into our new array userMal, so that we are able to access them
+        userMeal.push(selectedFood);
+        userMeal.push(selectedPrice);
 
-       // let userChoice = userFoodChoice[food];
-        let userPrice = userFoodChoice.food.price;
+       // console.log(userMeal);
+        
+
+        // this variable is to get the date from new array userMeal that is selected from userFoodChoices
+        const foodOptions = userFoodChoice[userMeal[0]];
+       // console.log(foodOptions);
+
+       // this variable is equal to the function of filter that we are now filtering out data from inputs from
+       // we will get the item that had the same values from the array as the user selected 
+        const filteredChoices = foodOptions.filter(item => item.price === userMeal[1]);
+       // console.log(filteredChoices);
+        
+        // this variable so we are able to get the answer from the filterdChoics, which filters the values
+        // from the user with the same value
+        const answer = filteredChoices[0].name;
+        console.log(answer);
+        
+        $('.answer').text(answer);
+
+    });
+    
+    
+    
+
+
+
+
+
+
+
+
+});
+
+
+   //let userPrice = userFoodChoice.
        // let userMeal = "";
 
       // const userMeal = userFoodChoice.filter((price)=>{
@@ -66,21 +114,6 @@ $(function(){
            // if(choice.price === price)
               //  userChoice.push(choice);
        // }
-        
+
         //let userMeal = userFoodChoice[food] && userFoodChoice[price];
        // console.log(userChoice);
-        console.log(userPrice);
-
-    });
-
-    
-    
-
-
-
-
-
-
-
-
-});
