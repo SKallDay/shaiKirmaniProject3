@@ -106,9 +106,10 @@ const userFoodChoice = {
 
 // js scripts below 
 $(function(){
-    // this is a array that we made so we can store the data from the values the user has given through the 
-    //inputs 
     
+    
+    // this is a array that we made so we can store the data from the values the user has given through the 
+    //inputs  
     $('form').on('submit',function(event){
         event.preventDefault();
         // this is collecting the value from the input that the user has selected 
@@ -123,7 +124,7 @@ $(function(){
         
         // these methods are pushing the values that we have gotten from user and put into variables
         // into our new array userMeal, so that we are able to access them
-        // define this array in the form submission the make the scope smaller 
+        // define this array in the form make the scope smaller 
         let userMeal = [];
         userMeal.push(selectedFood);
         userMeal.push(selectedPrice);
@@ -139,12 +140,14 @@ $(function(){
         const filteredChoices = foodOptions.filter(item => item.price === userMeal[1]);
        console.log(filteredChoices);
 
+       // made a random number picker and mutiplied it by the number of filterdChoices array
+       //This will allow us to get a random number that can pick out of several items from the array with the same input from the user
         const random = Math.floor(Math.random() * filteredChoices.length);
         console.log(random);
         
         
-        // this variable so we are able to get the answer from the filterdChoics, which filters the values
-        // from the user with the same value
+        // this variable so we are able to get the answer from the filterdChoics, which has been assigned a random number to items that have the matching values
+        // from the user from the inputs
         let answer = filteredChoices[random].name;
         console.log(answer);
         

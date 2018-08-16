@@ -147,8 +147,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   color: black;
-  background-image: url(../assets/background1.jpg);
-  font: 'Chivo', 'Overpass', sans-serif; }
+  background-image: url(../assets/background1.jpg); }
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  border: 2px solid black; }
+
+header {
+  margin-top: 60px; }
+
+body {
+  color: black;
+  background-image: url(../assets/background1.jpg); }
 
 .wrapper {
   max-width: 1080px;
