@@ -273,3 +273,18 @@ fieldset {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+@media (max-width: 1100px) {
+  .wrapper {
+    max-width: 800px; } }
+
+@media (max-width: 840px) {
+  .wrapper {
+    max-width: 650px; }
+  .section-container {
+    padding-bottom: 75px; }
+  fieldset ul {
+    width: 90%; }
+    fieldset ul li {
+      font-size: .8rem;
+      text-align: center; } }
