@@ -1,0 +1,22 @@
+@media(max-width:680px){
+    header{
+        margin-top: 25px;
+    }
+    .wrapper{
+        max-width: 450px;
+    }
+
+    .header-container h2{
+        font-size: .9rem;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    fieldset ul{
+        width: 95%;
+    }
+
+    .price-name{
+        display: none;
+    }
+}
