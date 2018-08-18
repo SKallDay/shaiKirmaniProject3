@@ -1,0 +1,28 @@
+@media(max-width:385px){
+    .wrapper{
+        max-width: 310px;
+    }
+    .header-container h1{
+        text-align: center;
+    }
+
+    form{
+        height: 22vh;
+    }
+    fieldset ul li{
+        padding: 20px 10px;
+    }
+
+    .question{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .button-container{
+        padding: 40px 0px 15px 0px;
+    }
+
+    .answer{
+        text-align: center; 
+    }
+}

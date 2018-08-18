@@ -1,4 +1,19 @@
 @media(max-width:475px){
+    .wrapper{
+        max-width: 360px;
+    }
 
+    .header-container h1{
+        font-size: 2rem;
+    }
+
+    form{
+        height: 25vh;
+    }
     
+
+    .button-container{
+        padding:40px 0px 38px 0px;
+    }
 }
+
