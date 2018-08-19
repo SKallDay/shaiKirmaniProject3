@@ -106,7 +106,9 @@ const userFoodChoice = {
 
 // js scripts below 
 $(function(){
-    
+
+    $("a").smoothScroll({ speed: 2000 });
+
     
     // this is a array that we made so we can store the data from the values the user has given through the 
     //inputs  

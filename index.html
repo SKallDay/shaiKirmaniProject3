@@ -5,83 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="icon" href="assets/favicon3..png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Where Should we Eat ?</title>
 </head>
 <body>
     <main>
-        <header>
+        <div class="title-card">
             <div class="wrapper">
-                <div class="header-container">
-                    <h1>Where should we eat?</h1>
-                    <h2>Finally a interactive quiz to help you and partner choose were to eat tonight !</h2>
+                <div class="title-container">
+                    <p>
+                        After a long day at work, coming home to nothing in the fridge, you and your partner turn to each other with the same look on your face. Time for a meal out! But Where?
+                        Then you both start the dance of deciding what to eat.
+                    </p>
+                    <p>
+                        This App is the answer to your problem. 
+                    </p>
+
+                    <a class="title-link" href="#App">
+                        <i class="fas fa-angle-double-down"></i>
+                    </a>
                 </div>
             </div>
-        </header>
-
-        <section class="wrapper">
-            <div class="section-container">
-                <form action="">
-                    <fieldset class="food">
-                        <p class="question">
-                            What are you in the mood for ?
-                        </p>
-                        <ul>
-                            <li class="food-choice">
-                                SPICY ?
-                                <label class="visuallyhidden" for="spicy">spicy</label>
-                                <input type="radio" name="food" id="spicy" value="spicy">
-                            </li>
-                            <li class="food-choice">
-                                SAVORY ?
-                                <label class="visuallyhidden" for="savory">savory</label>
-                                <input type="radio" name="food" id="savory" value="savory">
-                            </li>
-                            <li class="food-choice">
-                                SWEET ?
-                                <label class="visuallyhidden" for="sweet">sweet</label>
-                                <input type="radio" name="food" id="sweet" value="sweet">
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-                <form>
-                    <fieldset class="price-points">
-                        <p class="question">
-                            How much you wanna spend ?
-                        </p>
-                        <ul>
-                            <li class="price">
-                                $ <span class="price-name" >CHEAP DATE</span> 
-                                <label class="visuallyhidden" for="cheap">cheap</label>
-                                <input type="radio" name="price" id="cheap" value="$">
-                            </li>
-                            <li class="price">
-                                $$ <span class="price-name">REASONABLE MEAL</span> 
-                                <label class="visuallyhidden" for="resonable">reasonable</label>
-                                <input type="radio" name="price" id="reasonable" value="$$">
-                            </li>
-                            <li class="price">
-                                $$$ <span class="price-name">BALLING</span> 
-                                <label class="visuallyhidden" for="expensive">expensive</label>
-                                <input type="radio" name="price" id="balling" value="$$$">
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <div class="button-container">
-                        <input type="submit" value="We're Hungry">
+        </div>
+        <div class="app" id="App">
+            <header>
+                <div class="wrapper">
+                    <div class="header-container">
+                        <h1>Where should we eat?</h1>
+                        <h2>Finally a interactive quiz to help you and partner choose were to eat tonight !</h2>
                     </div>
-                </form>
-            </div>
-        </section>
-        <section class="wrapper">
-            <div class="answer">
-                
-            </div>
-        </section>
+                </div>
+            </header>
+
+            <section class="wrapper">
+                <div class="section-container">
+                    <form action="">
+                        <fieldset class="food">
+                            <p class="question">
+                                What are you in the mood for ?
+                            </p>
+                            <ul>
+                                <li class="food-choice">
+                                    SPICY ?
+                                    <label class="visuallyhidden" for="spicy">spicy</label>
+                                    <input type="radio" name="food" id="spicy" value="spicy">
+                                </li>
+                                <li class="food-choice">
+                                    SAVORY ?
+                                    <label class="visuallyhidden" for="savory">savory</label>
+                                    <input type="radio" name="food" id="savory" value="savory">
+                                </li>
+                                <li class="food-choice">
+                                    SWEET ?
+                                    <label class="visuallyhidden" for="sweet">sweet</label>
+                                    <input type="radio" name="food" id="sweet" value="sweet">
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset class="price-points">
+                            <p class="question">
+                                How much you wanna spend ?
+                            </p>
+                            <ul>
+                                <li class="price">
+                                    $ <span class="price-name" >CHEAP DATE</span> 
+                                    <label class="visuallyhidden" for="cheap">cheap</label>
+                                    <input type="radio" name="price" id="cheap" value="$">
+                                </li>
+                                <li class="price">
+                                    $$ <span class="price-name">REASONABLE MEAL</span> 
+                                    <label class="visuallyhidden" for="resonable">reasonable</label>
+                                    <input type="radio" name="price" id="reasonable" value="$$">
+                                </li>
+                                <li class="price">
+                                    $$$ <span class="price-name">BALLING</span> 
+                                    <label class="visuallyhidden" for="expensive">expensive</label>
+                                    <input type="radio" name="price" id="balling" value="$$$">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="button-container">
+                            <input type="submit" value="We're Hungry">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="wrapper">
+                <div class="answer">
+                    
+                </div>
+            </section>
+        </div>
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 </body>
 </html>
