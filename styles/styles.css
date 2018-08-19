@@ -374,4 +374,5 @@ fieldset {
   .button-container {
     padding: 40px 0px 15px 0px; }
   .answer {
-    text-align: center; } }
+    text-align: center;
+    font-size: 2rem; } }
